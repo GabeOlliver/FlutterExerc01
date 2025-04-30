@@ -1,0 +1,142 @@
+import 'package:flutter/material.dart';
+
+class AppColors {
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Colors.black;
+  static const Color lightGray = Color(0xFFD3D3D3);
+  static const Color appBarBlue = Color(0xFF1976D2);
+
+  static const Color buttonOrange = Color(0xFFFF9800);
+  static const Color buttonBlue = Color(0xFF2196F3);
+  static const Color buttonLightGray = Color(0xFFF5F5F5);
+}
+
+class AppTextStyles {
+  static const TextStyle clockText = TextStyle(
+    color: AppColors.white,
+    fontSize: 48,
+    fontWeight: FontWeight.bold,
+    shadows: [
+      Shadow(blurRadius: 10.0, color: AppColors.black, offset: Offset(2, 2)),
+    ],
+  );
+
+  static const TextStyle buttonText = TextStyle(
+    fontFamily: 'Lobster',
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle buttonTextHome = TextStyle(
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle appBarText = TextStyle(
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle defaultText = TextStyle(
+    fontFamily: 'Lobster',
+    fontSize: 20,
+    color: AppColors.black,
+  );
+
+  static const TextStyle defaultText2 = TextStyle(
+    fontFamily: 'Doto',
+    fontSize: 20,
+    color: AppColors.black,
+  );
+
+  static const TextStyle buttonText2 = TextStyle(
+    fontFamily: 'Doto',
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle buttonText3 = TextStyle(
+    fontFamily: 'PlayfairDisplay',
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle defaultText3 = TextStyle(
+    fontFamily: 'PlayfairDisplay',
+    fontSize: 20,
+    color: AppColors.black,
+  );
+
+  static const TextStyle buttonText4 = TextStyle(
+    fontFamily: 'PottaOne',
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle defaultText4 = TextStyle(
+    fontFamily: 'PottaOne',
+    fontSize: 20,
+    color: AppColors.black,
+  );
+
+  /// Botão arredondado padrão (personalizado pela cor)
+  static ButtonStyle roundedButton(Color backgroundColor) {
+    return ElevatedButton.styleFrom(
+      backgroundColor: backgroundColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+    );
+  }
+
+  /// Botão com fundo claro e borda arredondada
+  static ButtonStyle lightRoundedButton() {
+    return ElevatedButton.styleFrom(
+      backgroundColor: AppColors.buttonLightGray,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+    );
+  }
+
+  /// Botão com sombra sutil (optional para fundo escuro)
+  static ButtonStyle roundedButtonWithShadow(Color backgroundColor) {
+    return ElevatedButton.styleFrom(
+      backgroundColor: backgroundColor,
+      elevation: 6,
+      shadowColor: Colors.black.withOpacity(0.4),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+    );
+  }
+}
+
+class AppSpacing {
+  // Garfield Screen
+  static const double garfieldTopPadding = 10;
+  static const double garfieldLeftPadding = 20;
+  static const double garfieldRightPadding = 20;
+  static const double garfieldSpaceBetweenTextAndButton = 20;
+  static const double garfieldSpaceAfterButton = 20;
+  static const double garfieldBottomPadding = 20;
+
+  // Mickey Screen
+  static const double mickeyTopPadding = 100;
+  static const double mickeyLeftPadding = 20;
+  static const double mickeyRightPadding = 20;
+  static const double mickeySpaceBetweenTextAndButton = 60;
+  static const double mickeySpaceAfterButtons = 20;
+  static const double mickeyBottomPadding = 20;
+
+  // Snoopy Screen
+  static const double snoopyTopPadding = 50;
+  static const double snoopyLeftPadding = 20;
+  static const double snoopyRightPadding = 20;
+  static const double snoopySpaceBetweenTextAndButton = 80;
+  static const double snoopySpaceAfterButtons = 20;
+  static const double snoopyBottomPadding = 20;
+}
